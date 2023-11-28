@@ -6,15 +6,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.luiscutilak.gestao_vagas.modules.candidate.CandidateEntity;
+import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping
+@RequestMapping("/candidate")
 public class CandidateController {
     
 
     @PostMapping("/")
-    public void create(@RequestBody CandidateEntity candidateEntity) {  //criando candidato. Buscando atributos da classe Candidate Entity
-        
+    public void create(@Valid @RequestBody CandidateEntity candidateEntity) {  //criando candidato. Buscando atributos da classe Candidate Entity
+        System.out.println("Candidato");
+        System.out.println(candidateEntity.getName());
     }
 
 }
