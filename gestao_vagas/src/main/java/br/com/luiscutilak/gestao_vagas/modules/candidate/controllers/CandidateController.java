@@ -10,9 +10,11 @@ import br.com.luiscutilak.gestao_vagas.modules.candidate.CandidateEntity;
 import br.com.luiscutilak.gestao_vagas.modules.candidate.CandidateRepository;
 import jakarta.validation.Valid;
 
+
 @RestController
 @RequestMapping("/candidate")
 public class CandidateController {
+
 
     @Autowired
     private CandidateRepository candidateRepository;

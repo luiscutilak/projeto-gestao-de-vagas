@@ -1,4 +1,4 @@
-package br.com.luiscutilak.gestao_vagas.exception;
+package br.com.luiscutilak.gestao_vagas.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
